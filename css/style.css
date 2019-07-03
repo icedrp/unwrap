@@ -177,7 +177,6 @@ nav.navbar.active {
   font-size: 13px;
   color: #aeaeae;
   font-weight: bold;
-  margin-top: -1rem;
   display: inline-block;
   background-color: transparent;
   border: none;
@@ -200,13 +199,18 @@ nav.navbar.active {
   left: 20%;
 }
 .img-header-slide {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
 }
 .img-header-slide.active {
-  display: block;
+  position: relative;
+  z-index: 1;
+  visibility: inherit;
 }
 .img-bg-home-header {
   position: absolute;
+  z-index: 2;
 }
 
 /* Footer */
@@ -910,7 +914,7 @@ nav.navbar.active {
   }
 }
 
-@media (min-width: 576px) {
+@media (width: 576px) {
   .how-to-buy-box-line.box-right > .cricle {
     margin-left: 7.3rem;
   }
