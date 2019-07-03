@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(".btn-scroll").on("click", function(e) {
     e.preventDefault();
   });
+
   $("#home_example_slide").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
