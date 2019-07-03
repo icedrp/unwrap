@@ -10,7 +10,7 @@ $(document).ready(function() {
     arrows: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     nextArrow: $(".home-example-slide-next"),
     responsive: [
       {
