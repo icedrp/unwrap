@@ -48,6 +48,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NotoSansThai-Bold";
+  src: url("./fonts/NotoSansThai-Bold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/NotoSansThai-Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/NotoSansThai-Bold.otf") format("opentype"),
+    /* Open Type Font */ url("./fonts/NotoSansThai-Bold.svg") format("svg"),
+    /* Legacy iOS */ url("./fonts/NotoSansThai-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./fonts/NotoSansThai-Bold.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/NotoSansThai-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin-bottom: 40px;
   position: relative;
@@ -228,9 +241,8 @@ nav.navbar.active {
   text-align: center;
 }
 .home-unw-list {
-  font-family: "Roboto-Medium", "NotoSansThai-Medium";
+  font-family: "Roboto-Bold", "NotoSansThai-Bold";
   font-size: 22px;
-  font-weight: bold;
   padding: 20px 0;
   display: flex;
 }
@@ -304,8 +316,8 @@ nav.navbar.active {
 }
 .home-example-ready {
   color: #f99c71;
+  font-family: "Roboto-Bold", "NotoSansThai-Bold";
   font-size: 16px;
-  font-weight: bold;
 }
 .img-home-example-point {
   position: absolute;
@@ -895,5 +907,20 @@ nav.navbar.active {
   }
   .home-example-row-2 {
     padding: 60px 0 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .how-to-buy-box-line.box-right > .cricle {
+    margin-left: 7.3rem;
+  }
+  .how-to-buy-box-line > .cricle {
+    margin-left: -7.3rem;
+  }
+  .how-to-buy-row-step6 .how-to-buy-box-line.box-right > .cricle {
+    margin-left: 6.45rem;
+  }
+  .img-header-circle-1 {
+    left: 5rem;
   }
 }
